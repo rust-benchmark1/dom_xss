@@ -1,0 +1,10 @@
+[package]
+name = "dom_xss"
+version = "0.1.0"
+edition = "2024"
+authors = ["Olsi Gjeci <olsi.gjeci@snyk.io>"]
+
+[dependencies]
+actix-web = "4"
+ammonia = "4.1.0"
+serde = { version = "1.0", features = ["derive"] }
