@@ -95,3 +95,12 @@ http://127.0.0.1:3000/sanitized_color?color=%3Cimg%20src=x%20onerror=%22alert(%2
 # Test the Secure Route with CSP headers:
 http://127.0.0.1:3000/csp?color=%3Cimg%20src=x%20onerror=%22alert(%27It%20Worked!%27)%22%3E
 ```
+
+# Vulnerabilities Overview
+
+## /src/main.rs
+**Example 1** - CWE-79: Cross-site Scripting - XSS (Supported)
+
+Expected to be detected.
+- **Source:** Line 22
+- **Sink:** Line 32
